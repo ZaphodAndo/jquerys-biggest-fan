@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery's Biggest Fan</title>
+</head>
+<style>
+    body {
+        background-color: #0769ad;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+    }
+
+    marquee {
+        color: #cc8540;
+    }
+
+    .dollar {
+        margin-top: 4rem;
+        animation: 3s infinite spin;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-img {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .profile-img:hover {
+        animation: 3s infinite spin;
+    }
+
+    .alt-marquee {
+        color: aliceblue;
+        font-size: 2rem;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(365deg);
+        }
+    }
+</style>
+<body>
+    <main>
+        <img class="dollar" src="./dollar.png" width="250px" height="400px"/>
+        <marquee width="400px" behavior="alternate">Its the best</marquee>
+        <div class="hero">
+            <h1>jQuery's Biggest Fan!!</h1>
+            <a href="https://ethana.dev/" target="_blank" rel="noopener noreferrer">
+                <img class="profile-img" src="./profileImg.png" width="400px"/>
+            </a>
+        </div>
+        <marquee width="400px" behavior="alternate">Your gonna love it</marquee>
+        <img class="dollar" src="./dollar.png" width="250px" height="400px"/>
+    </main>
+    <marquee class="alt-marquee" width="800px">React, Angular, Vue, hah not here m8. who needs Typescript or JSX when you have the $ symbol</marquee>
+</body>
+</html>
